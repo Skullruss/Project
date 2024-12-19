@@ -1,0 +1,68 @@
+END USER LICENSE AGREEMENT (EULA)
+Last Updated: 10-6-2024
+This End User License Agreement (“Agreement”) is a legal agreement between you (“User” or “You”) and Alchemic Arts LLC (“Website”, “We”, “Us”, or “Our”) for the use of our software application (“Application”) and associated services offered on or through it. This Agreement outlines your rights and obligations regarding the downloading, use, and access of the Application.
+
+By downloading, installing, or using our Application, you agree to be bound by the terms and conditions of this Agreement. If you do not agree with these terms, you must not download or use the Application.
+
+1. LICENSE GRANT
+1.1 We grant You a limited, non-exclusive, non-transferable, revocable license to download, install, and use the Application solely for your personal, non-commercial purposes.
+
+1.2 You agree not to distribute, sell, lease, or otherwise transfer the Application, or any data, files, or outputs generated from it, without the express consent of Alchemic Arts LLC, as applicable.
+
+2. DATA PRIVACY
+2.1 By using the Application, you consent to the collection, use, and storage of personal data as outlined in our Privacy Policy. We are committed to ensuring that your data is collected and handled in compliance with applicable data protection laws.
+
+2.2 You may not sell, distribute, or otherwise share any data or personal information derived from the Application without the express written consent of Alchemic Arts LLC or as required by law.
+
+3. APPLICATION SHARING AND RESTRICTIONS
+3.1 You may not:
+
+Share or distribute the Application to third parties without authorization;
+Reverse engineer, decompile, or attempt to extract the source code of the Application;
+Use the Application for any unlawful purpose, or in a way that could damage or compromise the Application or its associated services.
+4. INDEMNITY AND DISCLAIMER OF LIABILITY
+4.1 Unilateral Indemnity Clause: By using the Application, you agree to indemnify, defend, and hold harmless Alchemic Arts LLC, and their respective officers, directors, employees, and agents from and against any and all claims, damages, losses, or liabilities arising from:
+
+Any unauthorized use or sharing of the Application or data generated through it;
+Any security breach, including data breaches, zero-day attacks, database worms, and SQL injections;
+Any use of the Application that violates this Agreement or applicable laws.
+4.2 Alchemic Arts LLC are not liable for any direct or indirect damages, including but not limited to loss of data, data corruption, or unauthorized access arising from the use of the Application.
+
+5. SECURITY AND VULNERABILITY ASSESSMENTS
+5.1 We conduct regular vulnerability assessments and audits of our systems to ensure the security and integrity of the Application. We also require our key vendors and partners to adhere to strict security protocols and undergo periodic vulnerability assessments.
+
+5.2 While we make every effort to secure the Application, no system is completely invulnerable. You acknowledge that there are inherent risks in using software applications, including risks from potential zero-day vulnerabilities or malicious attacks.
+
+6. CHANGES TO REQUIREMENTS AND TECHNOLOGY
+6.1 You understand that the security landscape and technological requirements are constantly evolving. As a result, this Agreement, the Application, and the data privacy policies may be updated from time to time to address new security threats, technological advancements, and regulatory changes.
+
+6.2 It is your responsibility to review this Agreement periodically to stay informed about any updates or modifications.
+
+7. INDUSTRY-SPECIFIC COMPLIANCE
+7.1 Our software is compliant with industry-specific standards and regulations, including as GDPR, CCPA, NIST, OWASP, ISO/IEC 27001, or PCI-DSS, where applicable. We work diligently to ensure that the Application remains compliant with the latest industry standards and best practices.
+
+7.2 In cases where updates or modifications are required to meet compliance standards, we will make reasonable efforts to notify you of such changes and any potential impact on your use of the Application.
+
+8. TERMINATION
+8.1 This Agreement is effective until terminated by either party. You may terminate this Agreement by ceasing all use of the Application and deleting all copies in your possession or control.
+
+8.2 We reserve the right to terminate or suspend your access to the Application at any time for violations of this Agreement, or if it is determined that your use poses a security risk.
+
+9. GOVERNING LAW
+9.1 This Agreement is governed by and construed in accordance with the laws of the United States and the state of Michigan, without regard to its conflict of law principles.
+
+9.2 Any dispute arising out of or relating to this Agreement or the Application will be resolved in the courts of the United States, and you consent to the personal jurisdiction of such courts.
+
+10. MISCELLANEOUS
+10.1 Entire Agreement: This Agreement constitutes the entire agreement between You and Us regarding the Application and supersedes all prior agreements or understandings.
+
+10.2 Severability: If any provision of this Agreement is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect.
+
+10.3 Waiver: No waiver of any term or condition of this Agreement shall be deemed a further or continuing waiver of such term or condition or any other term or condition.
+
+11. CONTACT INFORMATION
+If you have any questions or concerns about this Agreement, please contact us at AlchemicArts@gmail.com .
+
+By downloading or using the Application, you acknowledge that you have read, understood, and agree to be bound by this Agreement.
+
+This EULA should be reviewed by legal counsel to ensure it is appropriate for your specific application and complies with relevant laws and standards.

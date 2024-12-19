@@ -1,0 +1,828 @@
+/* Base Colors */
+:root {
+  --background-color: #333333; /* Dark gray background */
+  --text-color: #ffffff; /* White text */
+  --accent-color: #7289da; /* Accent color */
+  --accent-hover: #677bc4; /* Accent color on hover */
+  --accent-active: #4e5d94; /* Accent color when active */
+  --border-color: #484b51; /* Border color */
+  --link-color: #677bc4; /* Link color */
+  --text-muted: #72767d; /* Muted text color */
+  --color-espresso: #581e1a;
+  --color-cameo: #deaba9;
+  --color-dawn: #9e9c95;
+  --color-strikemaster: #9c6f97;
+  --background-primary: #36393f; /* Primary background color */
+  --background-secondary: #2f3136; /* Secondary background color */
+  --text-normal: #ffffff; /* Normal text color */
+}
+
+/* Body Styles */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+  background-color: #222222;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: var(--accent-hover);
+}
+
+/* Button Styles */
+.btn {
+  background-color: #555555;
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #777777;
+}
+
+/* Typography */
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.page-title {
+  color: var(--text-normal);
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+}
+
+p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  overflow-wrap: normal;
+}
+
+/* Links */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout Containers */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+ul {
+  margin-top: 5px;
+  list-style-position: outside;
+}
+
+/* Logo */
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+/* Form Styles */
+.form-group {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group input {
+  width: 100%;
+}
+
+.full-width {
+  grid-column: span 3;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-group-row {
+  display: flex;
+  gap: 1%;
+  margin-bottom: 10px;
+}
+
+/* Input and Textarea Styles */
+input[type="text"],
+input[type="number"],
+textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--text-color);
+  color: var(--text-color);
+  font-size: 16px;
+  padding: 5px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  outline: none;
+  border-bottom-color: var(--accent-color);
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+  color: var(--text-muted);
+  opacity: 1;
+  resize: none;
+}
+
+/* Fieldset Styles */
+/* Style for all fieldsets */
+fieldset {
+  border: 1px solid var(--accent-color);
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #444444; /* Slightly lighter than the background color */
+}
+
+legend {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+/* Adjust the width of inputs and textareas to fit within the fieldset */
+input,
+textarea,
+select {
+  width: calc(100% - 22px); /* Adjust for padding */
+  background-color: #555555;
+  color: var(--text-color);
+  border: 1px solid var(--accent-color);
+  padding: 5px;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+/* Optional: Add some hover effects for inputs */
+input:hover,
+textarea:hover,
+select:hover {
+  border-color: var(--accent-hover);
+}
+
+.remember-me-checkbox {
+  margin-bottom: 2%;
+  margin-left: 5%;
+}
+
+/* Traits Section */
+
+/* Container for the box */
+.traits-box {
+  width: 30%; /* 50% of the screen width */
+  float: left; /* Align the box to the left side */
+}
+
+/* Form group row styling */
+.traits-box .form-group-row {
+  display: flex; /* Use Flexbox for layout */
+  align-items: center; /* Align items vertically in the center */
+  margin-bottom: -7%; /* Space below each row */
+}
+
+/* Form group styling */
+.traits-box .form-group {
+  flex: 1; /* Each form group takes up equal space */
+  margin-right: 10px; /* Space between items */
+}
+
+/* Traits input styling */
+.traits-box .traits-input {
+  width: 75%; /* Full width of form group */
+  height: 30px; /* Height of input fields */
+  padding: 5px; /* Padding inside input fields */
+  font-size: 14px; /* Font size for input fields */
+  border: 1px solid #ccc; /* Border color */
+  background-color: var(--background-color); /* Match background color */
+  color: var(--text-color); /* Text color */
+}
+
+/* Label styling */
+.traits-box .form-group label {
+  margin-right: 10px; /* Space between label and input fields */
+}
+
+.traits-box input[type="text"]:focus,
+.traits-box input[type="number"]:focus {
+  border-color: var(--accent-color); /* Accent color for focus state */
+}
+
+/* Page Container to center the entire page */
+.sheet-container {
+  max-width: 1200px; /* Set a maximum width for the entire page */
+  margin: 20px auto; /* Center the page content horizontally */
+  padding: 20px;
+  background-color: #444444; /* Slightly lighter background for the form container */
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-column {
+  flex: 1;
+}
+.right-column {
+  flex: 1;
+}
+.speed {
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.text-section {
+  width: 70%;
+}
+
+.talents-section {
+  width: 100%;
+}
+
+/* Centering the form */
+.login-container {
+  max-width: 400px;
+  margin: 40px auto 0 auto; /* Adds 40px margin from the top */
+  padding: 20px;
+  background-color: var(--background-secondary);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--text-normal);
+}
+
+.login-form-group {
+  margin-bottom: 15px;
+}
+
+.login-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.login-form-group input[type="email"],
+.login-form-group input[type="password"],
+.login-form-group input[type="text"],
+.signup-form-group input[type="password"],
+.signup-form-group input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--background-primary);
+  color: var(--text-color);
+  box-sizing: border-box;
+}
+
+/* Align checkbox and label on the same line */
+.login-form-group.remember-me {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 15px;
+  white-space: nowrap;
+}
+
+.login-form-group.remember-me input[type="checkbox"] {
+  margin-right: 8px; /* Adjust the spacing between the checkbox and label */
+}
+
+.login-form-group.remember-me label {
+  margin: 0; /* Ensure no extra margin is added */
+  color: var(--text-color);
+}
+
+/* Custom button styles */
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.login-links {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login-link-btn {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 8px 16px;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.login-link-btn:hover {
+  background-color: var(--accent-hover);
+}
+
+/* Centering the form */
+.signup-container {
+  max-width: 400px;
+  margin: 40px auto 0 auto; /* Adds 40px margin from the top */
+  padding: 20px;
+  background-color: var(--background-secondary);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.signup-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--text-normal);
+}
+
+.signup-form-group {
+  margin-bottom: 15px;
+}
+
+.signup-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.signup-form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--background-primary);
+  color: var(--text-color);
+  box-sizing: border-box;
+}
+
+/* Custom button styles */
+.signup-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.sheets-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--background-secondary);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sheets-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--text-normal);
+}
+
+.create-sheet-btn {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin: 0 auto 20px auto;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.create-sheet-btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.sheets-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sheets-table th,
+.sheets-table td {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+.sheets-table th {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
+
+.sheets-table td {
+  background-color: var(--background-secondary);
+  color: var(--text-color);
+}
+
+/* Scoped Modal styles for Sheets page */
+.sheets-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000; /* Ensure the modal is on top of other content */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
+}
+
+.sheets-modal .modal-content {
+  background-color: var(
+    --background-primary
+  ); /* Use the site's background color */
+  margin: 5% auto; /* Adjust margin for a more centered appearance */
+  padding: 20px;
+  border: 1px solid var(--border-color); /* Match the border color */
+  width: 70%; /* Adjust width for better responsiveness */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.sheets-modal .close {
+  color: var(--text-muted); /* Use muted text color for the close button */
+  float: right;
+  font-size: 24px; /* Adjusted size */
+  font-weight: bold;
+}
+
+.sheets-modal .close:hover,
+.sheets-modal .close:focus {
+  color: var(--text-color); /* Change color on hover */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Header */
+.sheets-modal h2 {
+  margin-top: 0;
+  color: var(--text-normal); /* Title color */
+  font-size: 24px;
+}
+
+/* Modal Form */
+.sheets-modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sheets-modal label {
+  margin-bottom: 8px;
+  color: var(--text-color); /* Form label color */
+}
+
+.sheets-modal input[type="text"],
+.sheets-modal select {
+  background-color: var(--background-secondary);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  width: 100%; /* Ensures both fields take up the full width of the form */
+  box-sizing: border-box;
+}
+
+.sheets-modal input[type="text"]:focus,
+.sheets-modal select:focus {
+  border-color: var(--accent-color); /* Accent color on focus */
+}
+
+.sheets-modal button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.sheets-modal button:hover {
+  background-color: var(--accent-hover); /* Button hover color */
+}
+
+.sheets-modal .form-group {
+  margin-bottom: 15px; /* Space between form groups */
+}
+
+.sheets-modal .form-group input,
+.sheets-modal .form-group select {
+  width: calc(100% - 22px); /* Adjust width to fit within the form group */
+  background-color: var(--background-secondary);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.sheets-modal .form-group input[type="text"]:focus,
+.sheets-modal .form-group select:focus {
+  border-color: var(--accent-color); /* Accent color on focus */
+}
+
+.background-section {
+  width: 100%;
+}
+
+textarea.background-description {
+  width: 100%; /* Full width of the container */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  min-height: 100px; /* Minimum height */
+  resize: vertical; /* Allow vertical resizing by the user */
+  overflow-y: hidden;
+  resize: none;
+}
+
+.add-background-btn {
+  width: 100%;
+  height: 5%;
+}
+
+.character-sheet-textarea {
+  width: 100%; /* Full width of the container */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  min-height: 100px; /* Minimum height */
+  resize: vertical; /* Allow vertical resizing by the user */
+  overflow-y: auto;
+  resize: none;
+}
+
+
+
+
+.rank-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rank-plus, .rank-minus {
+  padding: 5px 10px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.rank-minus {
+  margin-right: 5px; /* Ensures it is next to the input on the left */
+}
+
+.rank-plus {
+  margin-left: 5px; /* Ensures it is next to the input on the right */
+}
+
+.traits-input {
+  text-align: center;
+  width: 50px;
+}
+
+th {
+  text-align: left; /* Aligns text to the left */
+}
+
+td {
+  padding: 5px;
+}
+
+.rank-column {
+  text-align: center;
+}
+
+.trait-dropdown {
+  display: inline-block;
+  width: 100%; /* Allow auto width */
+  max-width: 100%; /* Prevent overflow beyond parent */
+}
+
+.skills-input {
+  width: 100%; /* Ensures the input takes up the full width of the column */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's width */
+    padding: 5px; /* Optional: Adds some padding inside the input */
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+.rank-input {
+  text-align: center;
+}
+
+/* Basic modal styling */
+#diceModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-color);
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+#modalOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px; /* Adds spacing between the input and button */
+}
+
+.search-bar input[type="text"] {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.search-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+#openDiceModal {
+  position: fixed; /* Ensures the button stays in the same position when scrolling */
+  bottom: 20px; /* Distance from the bottom of the screen */
+  right: 20px; /* Distance from the right edge of the screen */
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 50%; /* Rounded corners */
+  width: 60px; /* Button width */
+  height: 60px; /* Button height */
+  display: flex; /* To center the text */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  z-index: 1000; /* Ensures it's above other elements */
+}
+
+#openDiceModal:hover {
+  background-color: #33b300; /* Darker blue on hover */
+}
+#save-button {
+  background-color: var(--accent-color); /* Base color */
+  color: var(--text-color); /* Text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 95%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#save-button:hover {
+  background-color: var(--accent-hover); /* Lighter hover color */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+#save-button:active {
+  background-color: var(--accent-active); /* Active state color */
+  transform: scale(1.00); /* Slightly shrink on click */
+}
+/* Centered Error Message */
+#error-message {
+  display: none; /* Hide by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
